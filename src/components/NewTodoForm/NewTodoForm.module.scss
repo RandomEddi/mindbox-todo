@@ -1,0 +1,44 @@
+@import '../../variables.scss';
+
+.newTodoForm {
+  border: $border;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  .todosVisibility {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      img {
+        margin-top: 5px;
+        transition: transform 0.3s ease;
+      }
+    }
+    &:not(.visible) {
+      img {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  .todoInput {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $pink-color;
+      font-weight: 200;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.todoManagement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border: $border;
+  border-top: none;
+  .todoLeft {
+    font-size: 14px;
+    color: $gray-color;
+  }
+  .todoFilter {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .todoClear {
+  }
+}

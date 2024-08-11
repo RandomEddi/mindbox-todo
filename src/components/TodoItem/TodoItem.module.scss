@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.todo {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  border-bottom: $border;
+  .todoCheckbox {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todoTitle {
+    font-size: 18px;
+    color: $black-color;
+    font-weight: 300;
+  }
+  &.completed {
+    .todoTitle {
+      color: $gray-color;
+      text-decoration: line-through;
+    }
+  }
+}
